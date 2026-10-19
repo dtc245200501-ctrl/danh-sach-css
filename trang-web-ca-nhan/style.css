@@ -1,0 +1,57 @@
+/* Định dạng chung */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    margin: 0;
+}
+/* Định dạng tiêu đề */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+header h1 { font-size: 30px; }
+section { padding: 0 20px; }
+/* Ảnh đại diện có viền và góc tròn */
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #4CAF50;
+    margin: 20px;
+    object-fit: cover;
+}
+/* Danh sách sở thích */
+ul {
+    list-style-type: square;
+    text-align: left;
+    display: inline-block;
+    margin-top: 10px;
+}
+li { margin-bottom: 8px; }
+.goal p { max-width: 760px; margin: 15px auto; line-height: 1.6; }
+/* Bảng thông tin liên hệ */
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 60%;
+}
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    overflow-wrap: anywhere;
+}
+th { background-color: #4CAF50; color: white; }
+/* Chân trang */
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ddd;
+}
+@media (max-width: 600px) {
+    table { width: 100%; }
+    header h1 { font-size: 25px; }
+}
