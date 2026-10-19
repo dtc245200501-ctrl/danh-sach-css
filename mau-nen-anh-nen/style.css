@@ -1,0 +1,27 @@
+/* Thiết lập màu nền cho toàn trang. */
+body {
+    background-color: #e8f2fb;
+    color: #173b60;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 35px 20px;
+    line-height: 1.6;
+}
+h1 { font-size: 30px; }
+/* Thêm ảnh nền vào div và căn giữa nội dung. */
+.noi-dung {
+    background-color: #173b60;
+    background-image: url("background.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 80px 25px;
+    border-radius: 8px;
+}
+.noi-dung h2 { margin-top: 0; }
+.noi-dung p { margin-bottom: 0; }
