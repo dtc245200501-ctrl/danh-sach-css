@@ -1,0 +1,64 @@
+/* Định dạng chung */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 0 20px 30px;
+    color: #222;
+    line-height: 1.6;
+}
+h1 { color: #174b75; }
+h2 { margin-top: 32px; font-size: 21px; }
+h3 { font-size: 16px; }
+li { margin: 6px 0; }
+
+/* Phần 2: Dấu vuông */
+.square-list { list-style-type: square; }
+
+/* Phần 3: Số La Mã viết hoa */
+.roman-list { list-style-type: upper-roman; }
+
+/* Phần 4: Hình ảnh làm dấu đánh dấu */
+.image-list { list-style-image: url("marker.svg"); }
+
+/* Phần 5: Hai danh sách giống nhau, khác vị trí dấu.
+   Giới hạn chiều rộng để thấy vị trí dòng xuống hàng. */
+.outside-list, .inside-list {
+    max-width: 320px;
+    background-color: #f1f1f1;
+    padding: 12px 12px 12px 32px;
+}
+.outside-list { list-style-position: outside; }
+.inside-list { list-style-position: inside; }
+
+/* Phần 6: Gộp kiểu dấu, vị trí và hình ảnh trong một thuộc tính.
+   square là dấu dự phòng khi ảnh không tải được. */
+.shorthand-list { list-style: square inside url("marker.svg"); }
+
+/* Phần 7: Màu nền, màu chữ, khoảng cách trong và giữa các mục */
+.color-list {
+    list-style-type: square;
+    background-color: #dceefb;
+    color: #174b75;
+    padding: 16px 16px 16px 40px;
+}
+.color-list li {
+    background-color: #f1f8ff;
+    color: #123e60;
+    padding: 8px 12px;
+    margin: 8px 0;
+}
+
+/* Phần 8: Danh sách tổng hợp, dùng thuộc tính rút gọn */
+.roadmap-list {
+    list-style: upper-roman inside;
+    background-color: #e1f1e4;
+    color: #205c31;
+    padding: 16px;
+    margin: 20px 0;
+}
+.roadmap-list li {
+    background-color: #f5fbf6;
+    padding: 10px 14px;
+    margin: 8px 0;
+}
