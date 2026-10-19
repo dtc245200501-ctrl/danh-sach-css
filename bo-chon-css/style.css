@@ -1,0 +1,52 @@
+/* Bộ chọn phần tử (element): đổi màu nền trang. */
+body {
+    background-color: #eef5ff;
+    color: #222;
+    max-width: 760px;
+    margin: 35px auto;
+    padding: 20px;
+}
+/* Bộ chọn nhóm (grouping). */
+h1, p, ul, button {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+/* Bộ chọn ID: căn giữa tiêu đề. */
+#tieu-de {
+    text-align: center;
+    color: #164b87;
+}
+/* Bộ chọn lớp (class). */
+.gioi-thieu {
+    background-color: white;
+    padding: 16px;
+    border: 1px solid #ccd8e8;
+}
+.so-thich {
+    list-style-type: square;
+    padding-left: 30px;
+}
+.so-thich li {
+    margin: 12px 0;
+    font-weight: bold;
+}
+.doc-sach { color: #a52b2b; }
+.the-thao { color: #22723b; }
+.lap-trinh { color: #713a9b; }
+button {
+    background-color: #1767ad;
+    color: white;
+    border: 2px solid #1767ad;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Bộ chọn lớp giả (pseudo-class): đổi màu khi rê chuột. */
+button:hover {
+    background-color: #114676;
+    border-color: #114676;
+}
+button:focus-visible {
+    outline: 3px solid #b26400;
+    outline-offset: 3px;
+}
